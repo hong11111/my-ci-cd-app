@@ -6,7 +6,7 @@ workflows:
     environment:
       flutter: stable
       groups:
-        - firebase_credentials
+        - firebase_group
     scripts:
       - name: Install Flutter dependencies
         script: flutter pub get
@@ -37,4 +37,3 @@ workflows:
           app_id: $FIREBASE_APP_ID
         ios:
           app_id: $FIREBASE_IOS_APP_ID
-
